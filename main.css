@@ -1,0 +1,21 @@
+.barchart_wrap {
+  width: 1000px;
+  height: 200px;
+  background-color: orangered;
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  grid-gap: 1px;
+  align-items: flex-end;
+}
+.barchart_wrap > * {
+  background-color: #007829;
+  height: 10px;
+  width: 2px;
+  border-style: solid;
+  border-width: 0 2px 50px 2px;
+  border-color: transparent transparent #00112c transparent;
+  box-shadow: 0.1px 0 0.1px 2px #012a6b;
+}
+.barchart_wrap :nth-child(odd) {
+  background-color: #002c0f;
+}
